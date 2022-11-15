@@ -1,0 +1,55 @@
+/*ZERANDO PÁGINA*/
+* {
+    border: 0;
+    margin: 0;
+}
+
+
+/*IMAGEM DO BANNER*/
+#banner {
+    width: 100%;
+    height: 600px;
+}
+
+
+/*TAG PRINCIPAL*/
+.principal {
+    background-color:aquamarine;
+    padding: 5%;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+}
+
+
+/*TAG COM OS TIPOS*/
+.tipos {
+    margin-top: 100px;
+    /*background-color: aqua;*/
+    padding: 20px;
+}
+
+.estilo {
+    margin-bottom: 40px;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 20%;
+}
+
+.itens {
+    font-style: italic;
+    font-size: large;
+}
+
+.img-tipos {
+    width: 50%;
+}
