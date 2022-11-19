@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MOBA</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1>
+                <img src="img/mobile.jpg" alt="personagem Gusion" style="height: 230px; width: 130px;">
+            </h1>
+    
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="contato.html">Contato</a></li>            
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+       <form>
+            <!--Etiqueta-->
+            <label for="nomeCompleto">Nome completo</label>  
+            <!--required - preenchimento obrigatório-->
+            <input type="text" id="nomeCompleto" class="input-padrao" required> 
+
+            <!--type: email, tel, mudam o teclado do smartphone de acordo com o campo-->
+            <label for="email">Email</label>  
+            <input type="email" id="email" class="input-padrao" required placeholder="Email@dominio.com"> <!--campo digitavel-->
+
+            <label for="telefone">Telefone</label>  
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx"> <!--campo digitavel-->
+
+            <!--cols = tamanho da caixa, type = circulo, name= contato (mesmo grupo) -->
+            <label for="mensagem">Mensagem</label>
+            <textarea id="" cols="70" rows="10" class="input-padrao" required></textarea>
+
+            <div>
+                   <fieldset> <!--campos referentes ao mesmo texto-->
+                        <legend>Como prefere o nosso contato</legend>
+                        <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>                    
+
+                        <label for="radio-email"><input type="radio" name="contato" value="telefone" id="radio-telefone" >Telefone</label>   
+
+                        <!--checked vai aparece já marcado por padrão-->
+                        <label for="radio-email"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                   </fieldset>
+
+                    <fieldset class="horas"> <!--campos referentes ao mesmo texto-->
+                        <legend>Qual horário prefere ser atendido?</legend>  
+
+                        <!--caixa com seleções dentro-->
+                        <select id="horario">                      
+                            <option value="">Manhã</option>
+                            <option value="">Tarde</option>
+                            <option value="">Noite</option>
+                        </select>
+                    </fieldset>
+                    
+                    <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                    <input type="submit" value="Enviar" class="enviar"> <!--botão-->
+            </div>
+       </form>
+
+       <!--Criando uma tabela-->
+       <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+       </table>
+    </main>
+
+    <footer>
+        <img src="img/logo.webp" alt="Logo" class="logo">
+        <p class="copyright">&copy; Copyright Mobile Legends - 2022</p>
+    </footer>
+</body>
+</html>
